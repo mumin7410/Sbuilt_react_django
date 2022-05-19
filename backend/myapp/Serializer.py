@@ -1,6 +1,7 @@
 from attr import field
 from rest_framework.serializers import ModelSerializer
-from .models import Post,PostImage
+from rest_framework import serializers
+from .models import Post, PostImage
 
 
 class BlogSerializer(ModelSerializer):
@@ -8,7 +9,10 @@ class BlogSerializer(ModelSerializer):
         model = Post
         fields = '__all__'
 
+
 class ImageSerializer(ModelSerializer):
+    topic_name = serializers.CharField(source='post.Link', read_only=True)
+
     class Meta:
         model = PostImage
         fields = '__all__'
