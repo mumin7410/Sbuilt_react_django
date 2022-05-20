@@ -25,3 +25,10 @@ def getImage(request):
     image = PostImage.objects.all()
     serializer = ImageSerializer(image, many=True)
     return Response(serializer.data)
+
+
+@api_view(['GET'])
+def getImages(request, category):
+    image = PostImage.objects.filter(category__categoryName=category)
+    serializer = ImageSerializer(image, many=True)
+    return Response(serializer.data)

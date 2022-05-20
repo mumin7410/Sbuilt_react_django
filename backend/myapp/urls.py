@@ -5,4 +5,5 @@ urlpatterns = [
     path('blogs/', views.getNames, name='blog'),
     path('blogs/<pk>', views.getName, name='blog'),
     path('Image/', views.getImage, name='image'),
+    path('Image/<str:category>', views.getImages, name='imageCategory'),
 ]
