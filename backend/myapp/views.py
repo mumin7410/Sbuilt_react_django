@@ -28,7 +28,7 @@ def getImage(request):
 
 
 @api_view(['GET'])
-def getImages(request, category):
-    image = PostImage.objects.filter(category__categoryName=category)
+def getImages(request, categorys):
+    image = PostImage.objects.filter(category__categoryName=categorys)
     serializer = ImageSerializer(image, many=True)
     return Response(serializer.data)

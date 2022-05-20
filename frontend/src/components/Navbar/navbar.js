@@ -22,7 +22,7 @@ const Navbar = () => {
                                 <NavLink to='/'>หน้าหลัก</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink to='/catalog'>แคตตาล้อก</NavLink>
+                                <NavLink to='/catalog/all'>แคตตาล้อก</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink to='/contact'>ติดต่อเรา</NavLink>
