@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Post, PostImage
+from .models import Category, Post, PostImage
 # Register your models here.
 # admin.site.register(Post)
 # admin.site.register(PostImage)
@@ -19,4 +19,9 @@ class PostAdmin(admin.ModelAdmin):
 
 @admin.register(PostImage)
 class PostImageAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(Category)
+class CategoryAdmin(admin.ModelAdmin):
     pass

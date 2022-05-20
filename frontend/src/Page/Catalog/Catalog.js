@@ -23,7 +23,7 @@ const Catalog = ()=>{
         <div>Loading ...</div>
         ) : (
         Note.map((data) => (
-        <a href={data.topic_name}>
+        <a href={data.topic_link}>
           <img src={`${data.images}`} style={{borderRadius:'30px',maxWidth:'200px',padding:'3px 5px'}}></img>
         </a>    
         ))
