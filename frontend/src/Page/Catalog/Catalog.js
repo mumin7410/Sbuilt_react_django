@@ -14,7 +14,7 @@ const Catalog = ()=>{
   },[])
 
   let getNote = async () => {
-    let response = await fetch(`http://127.0.0.1:8000/Image/all`)
+    let response = await fetch(`http://127.0.0.1:8000/api/Image/all`)
     let data = await response.json().catch(err=>{console.log(err)})
     setNote(data)
     setIsLoading(false);
