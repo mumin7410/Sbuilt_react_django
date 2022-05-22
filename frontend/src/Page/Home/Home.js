@@ -17,8 +17,8 @@ const Home = () => {
                             <TextWrapper>
                                 <Topline>เฟอร์นิเจอร์บิ้วอิน</Topline>
                                 <Heading>ออกแบบเฟอร์นิเจอร์บิ้วอิน<br/>ตามไสตล์ที่คุณต้องการ</Heading>
-                                <Subtitle>แคตตาล้อกรวมผลงานการบิ้วอินที่ผ่านมา</Subtitle>
-                                <Link to='/Catalog/all'>
+                                <Subtitle>แคตตาล้อกรวมผลงานการบิ้วอิน</Subtitle>
+                                <Link to='/Catalog'>
                                     <Button primary={false} Big fontBig>เข้าชมแคตตาล้อก</Button>
                                 </Link>
                             </TextWrapper>

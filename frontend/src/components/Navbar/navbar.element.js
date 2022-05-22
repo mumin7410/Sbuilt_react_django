@@ -6,7 +6,7 @@ import { AiTwotoneHome } from 'react-icons/ai'
 
 
 
-export const Nav = styled.nav` //Nav section 
+export const Navs = styled.nav` //Nav section 
 background:#ffff;
 font-family: 'Prompt', sans-serif;
 height:100px;
@@ -58,20 +58,22 @@ export const HambergerIcon = styled.div` //hamberger icon container
  }
 `
 
-export const NavMenu = styled.ul` //ul ตัวครอบทั้ง li a
+export const NavMenus = styled.ul` //ul ตัวครอบทั้ง li a
 display:flex;
 font-family: 'Prompt', sans-serif;
 /* align-items:center; */
 text-align:center;
 list-style:none; //เอาจุดดำออก 
 justify-content:center;
+margin-top:1rem ;
 @media screen and (max-width: 960px){ //หน้าจอต่ำกว่า 960px  
 display:flex;
 flex-direction:column;
 width:100%;
 height:100vh;
 position:absolute;
-top:80px; //top 80 px เพราะต้องเว้นระยะจาก nav ด้านบน 
+/* top:80px; //top 80 px เพราะต้องเว้นระยะจาก nav ด้านบน  */
+z-index:-5 ;
 left: ${({ click }) => (click ? 0 : '-100%')};
 opacity:1;
 transition:0.3s;
@@ -81,7 +83,7 @@ padding:5px;
 `
 
 
-export const NavItem = styled.li` //li ครอบ a 
+export const NavItems = styled.li` //li ครอบ a 
 height:80px;
 border-bottom:2px solid transparent;
 margin-right:5px;

@@ -115,6 +115,7 @@ export const SocialMediaWrap = styled.div`
     margin:20px 0 0 0;
     @media screen and (max-width:960px){
         flex-direction:column;
+        margin-bottom:8px ;
     }
 `
 export const SocialLogo = styled(Link)`

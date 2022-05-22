@@ -1,5 +1,5 @@
 import React,{ useState }  from 'react'
-import {Button,Nav,Navbarcontainer,Navlogo,Navicon,HambergerIcon,NavMenu,NavItem,NavLink, NavBtn} from './navbar.element'
+import {Button,Navs,Navbarcontainer,Navlogo,Navicon,HambergerIcon,NavMenus,NavItems,NavLink, NavBtn} from './navbar.element'
 import { FaBars, FaTimes,  } from "react-icons/fa"
 import { IconContext } from "react-icons";
 import Logos from '../../../src/Logos.png'
@@ -11,25 +11,25 @@ const Navbar = () => {
     return (
         <>
             <IconContext.Provider value={{ color: "black", }}>
-                <Nav>
+                <Navs>
                     <Navbarcontainer>
                         <Navlogo to='/'>
                             <img src={Logos} style={{ width: '80px' }} alt='' />
                         </Navlogo>
                         <HambergerIcon onClick={clickedHandler}>{click ? <FaTimes /> : <FaBars />}</HambergerIcon>
-                        <NavMenu onClick={clickedHandler} click={click}>
-                            <NavItem >
+                        <NavMenus onClick={clickedHandler} click={click}>
+                            <NavItems>
                                 <NavLink to='/'>หน้าหลัก</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink to='/catalog/all'>แคตตาล้อก</NavLink>
-                            </NavItem>
-                            <NavItem>
+                            </NavItems>
+                            <NavItems>
+                                <NavLink to='/catalog'>แคตตาล้อก</NavLink>
+                            </NavItems>
+                            <NavItems>
                                 <NavLink to='/contact'>ติดต่อเรา</NavLink>
-                            </NavItem>
-                        </NavMenu>
+                            </NavItems>
+                        </NavMenus>
                     </Navbarcontainer>
-                </Nav>
+                </Navs>
             </IconContext.Provider>
         </>
     )

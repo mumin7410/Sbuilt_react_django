@@ -9,6 +9,8 @@ import Contact from './Page/Contact/Contact';
 import Footer from './components/Footer/footer';
 import Catalog from './Page/Catalog/Catalog';
 import Desc from './Page/CatalogDesc/Catalogdesc';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 function App() {
   return (
     <Router>
@@ -18,7 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/catalog/:id" element={<Catalog />} />
+        <Route path="/catalog" element={<Catalog />} />
         <Route path="/Desc" element={<Desc />} />
 
       </Routes>

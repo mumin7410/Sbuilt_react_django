@@ -56,6 +56,9 @@ font-size:1.3vw;
 line-height:48px;
 letter-spacing:1.4px;
 margin-bottom:16px;
+@media screen and (max-width:768px){
+    font-size: 1rem;
+}
 `
 
 export const Heading = styled.div`
@@ -63,6 +66,9 @@ margin-bottom:24px;
 font-size:2.9vw;
 line-height:1.1;
 color:#1c2237;
+@media screen and (max-width:768px){
+    font-size: 5vw;
+}
 `
 
 export const Subtitle = styled.p`
@@ -71,6 +77,9 @@ font-size:1.3vw;
 line-height:24px;
 max-width:440px;
 margin-bottom:35px;
+@media screen and (max-width:768px){
+    font-size: 0.9rem;
+}
 `
 
 export const ImageWrapper = styled.div`
