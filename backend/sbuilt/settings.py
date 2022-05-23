@@ -65,7 +65,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            '../frontend/build',
+            './frontend/build',
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -129,13 +129,13 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATICFILES_DIRS = ['../frontend/build/static', ]
+STATICFILES_DIRS = ['./frontend/build/static', ]
 
-STATIC_ROOT = os.path.join('../frontend/src/static')
+STATIC_ROOT = os.path.join('./frontend/src/static')
 
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join('../frontend/src/media')
+MEDIA_ROOT = os.path.join('./frontend/src/media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
