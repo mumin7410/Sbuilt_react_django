@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-()1p5aqa_pt&hjn29=k$%1i28681jf2=90^l%(d8sokf0@s2px
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -65,7 +65,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            './frontend/build',
+            './build',
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -129,14 +129,14 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATICFILES_DIRS = ['./frontend/build/static', ]
+STATICFILES_DIRS = ['./build/static', ]
 
-STATIC_ROOT = os.path.join('./frontend/src/static')
+STATIC_ROOT = os.path.join('./src/static')
 
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join('./frontend/src/media')
-
+MEDIA_ROOT = os.path.join('./src/media')
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
