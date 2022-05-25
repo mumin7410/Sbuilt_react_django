@@ -26,9 +26,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-()1p5aqa_pt&hjn29=k$%1i28681jf2=90^l%(d8sokf0@s2px'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://sbuilt-react-django.herokuapp.com/',
+                 'http://127.0.0.1:8000/']
 
 
 # Application definition
@@ -140,10 +141,6 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 STATICFILES_DIRS = ['./build/static']
-
-# STATIC_ROOT = os.path.join('./src/static')
-
-# MEDIA_ROOT = os.path.join('./src/media')
 
 
 # Default primary key field type
